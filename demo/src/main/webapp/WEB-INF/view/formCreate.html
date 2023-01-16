@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Customer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Add new Student</h2>
+    <form action="/create" method="post" enctype="multipart/form-data">
+<!--        <div class="form-group">-->
+<!--            <label>ID:</label>-->
+<!--            <input class="form-control" placeholder="Enter code" name="id">-->
+<!--        </div>-->
+        <div class="form-group">
+            <label>Employee Code:</label>
+            <input class="form-control" placeholder="Enter code" name="code">
+        </div>
+
+        <div class="form-group">
+            <label>Name:</label>
+            <input class="form-control" placeholder="Enter name" name="name">
+        </div>
+        <div class="form-group">
+            <label>Age:</label>
+            <input class="form-control" placeholder="Enter age" name="age">
+        </div>
+        <div class="form-group">
+            <label>Salary:</label>
+            <input class="form-control" placeholder="Enter salary" name="salary">
+        </div>
+        <div class="form-group">
+            <label>Branch:</label>
+
+
+            <select class="form-control" name="idBranch">
+                <option value="1">IT</option>
+                <option value="2">Accountant</option>
+                <option value="3">Personnel</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+</body>
+</html>
